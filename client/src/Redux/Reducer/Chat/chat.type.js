@@ -1,0 +1,14 @@
+export const FETCH_CHATS = "FETCH_CHATS";
+export const FETCH_USER = "FETCH_USER";
+export const FETCH_USER_CLEAR = "FETCH_USER_CLEAR";
+export const CREATE_CHAT = "CREATE_CHAT";
+export const CREATE_GROUP_CHAT = "CREATE_GROUP_CHAT";
+export const SELECT_CHAT = "SELECT_CHAT";
+export const CLEAR_SELECT_CHAT = "CLEAR_SELECT_CHAT";
+export const SHOW_USER_LOADING = "SHOW_USER_LOADING";
+export const REMOVE_USER_FROM_GROUP = "REMOVE_USER_FROM_GROUP";
+export const DELETE_CHAT = "DELETE_CHAT";
+export const LEAVE_GROUP = "LEAVE_GROUP";
+export const MESSAGES_DELETED = "MESSAGES_DELETED";
+// Mới thêm để xử lý lỗi mạng
+export const SHOW_NETWORK_ERROR = "SHOW_NETWORK_ERROR";
