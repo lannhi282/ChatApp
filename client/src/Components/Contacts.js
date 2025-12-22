@@ -34,7 +34,7 @@ const Contacts = ({
             <div className="flex justify-around items-center w-3/4 xs:w-1/2">
               <input
                 type="text"
-                className="w-96 px-4 mr-3 py-2 focus:outline-none "
+                className="w-96 px-0 mr-3 py-2 focus:outline-none "
                 placeholder="Enter Email or Name"
                 value={search}
                 onChange={handleChange}
