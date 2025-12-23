@@ -34,7 +34,7 @@ function Nav() {
 
           <li>
             <NavLink to="/auth/signup" className="navbar-link">
-              <Button className="button">signup</Button>
+              <Button className="button">Signup</Button>
             </NavLink>
           </li>
 

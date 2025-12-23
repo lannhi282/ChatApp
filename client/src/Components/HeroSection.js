@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { Button } from "../Styles/Button";
 import { HiChevronDoubleRight } from "react-icons/hi";
 
-
 const HeroSection = () => {
   return (
     <Wrapper className="hero-section" id="home">
@@ -12,14 +11,14 @@ const HeroSection = () => {
         <div className="flex">
           <div
             className="hero-section-data flex flex-col justify-start"
-            data-aos="fade-right">
+            data-aos="fade-right"
+          >
             <p>Welcome to</p>
-            <h1 className="font-bold">
-              Real time chat application for all your needs
-            </h1>
+            <h1 className="font-bold">Real time chat application</h1>
             <p>
-              Easy to use our chat app, Attractive and clean design, with many
-              Features Dark & light, Recent Chat And many more.......
+              Fast, secure, and easy-to-use chat platform designed for seamless
+              communication. Enjoy modern UI, dark & light mode, real-time
+              messaging, recent chats, and more.
             </p>
             <div className="login-btn">
               <NavLink to="/auth">
@@ -36,30 +35,35 @@ const HeroSection = () => {
         </div>
       </div>
 
-        <div className="hero-section-image absolute w-full h-full">
-            {/* <img src="https://chitchat-react.vercel.app/assets/images/landing/2.png" alt="bg" className="img-style" /> */}
-          </div>
+      <div className="hero-section-image absolute w-full h-full">
+        {/* <img src="https://chitchat-react.vercel.app/assets/images/landing/2.png" alt="bg" className="img-style" /> */}
+      </div>
 
       {/* shapes code */}
       <div className="shapes">
-      <div className="shape-1">
-         <img width="250px" src="/images/shape-1.png" alt="" />
+        <div className="shape-1">
+          <img width="250px" src="/images/shape-1.png" alt="" />
         </div>
         <div className="shape-2">
-         <div style={{width: "800px"}}>
-         <img width="800px" src="/images/shape-1.png" alt="" />
-         </div>
+          <div style={{ width: "800px" }}>
+            <img width="800px" src="/images/shape-1.png" alt="" />
+          </div>
         </div>
         <div className="shape-3">
-         <div style={{width: "150px"}}>
-         <img width="800px" src="/images/shape-3.png" alt="" />
-         </div>
+          <div style={{ width: "150px" }}>
+            <img width="800px" src="/images/shape-3.png" alt="" />
+          </div>
         </div>
         <div className="shape-4">
-         <img width="43px" src="/images/shape-5.png" alt="" />
+          <img width="43px" src="/images/shape-5.png" alt="" />
         </div>
         <div className="shape-5">
-         <img width="43px" style={{zIndex: "2"}} src="/images/shape-6.png" alt="" />
+          <img
+            width="43px"
+            style={{ zIndex: "2" }}
+            src="/images/shape-6.png"
+            alt=""
+          />
         </div>
       </div>
     </Wrapper>
@@ -112,7 +116,7 @@ const Wrapper = styled.section`
       justify-content: center;
       align-items: center;
       width: 200px;
-      border-radius: 5px;
+      border-radius: 100px;
       background: ${({ theme }) => theme.colors.gradient};
       font-weight: 600;
       padding: 18px 30px;

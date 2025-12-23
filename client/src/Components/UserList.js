@@ -179,11 +179,8 @@ const UserList = ({
               ))}
           </div>
         ) : (
-          <div className="my-4">
-            <p className="text-lg text-gray-400 w-full first-letter: mx-auto">
-              {" "}
-              No Chat availabe
-            </p>
+          <div className="no-chat-top">
+            <p>No Chat available</p>
           </div>
         )}
       </ul>
@@ -193,7 +190,20 @@ const UserList = ({
 
 const Wrapper = styled.section`
   position: relative;
+  .no-chat-top {
+    width: 100%;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center; /* ✅ giữa ngang */
+    align-items: flex-start; /* ✅ nằm trên */
+    text-align: center;
 
+    p {
+      font-size: 1.1rem;
+      color: #9ca3af;
+      font-weight: 500;
+    }
+  }
   mark {
     background-color: ${({ theme }) => theme.colors.primaryRgb};
   }

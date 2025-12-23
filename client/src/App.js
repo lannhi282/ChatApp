@@ -3,15 +3,12 @@ import "./App.css";
 import Login from "./Components/Auth/Login";
 import Signup from "./Components/Auth/Signup";
 import AuthPage from "./Pages/AuthPage";
-// import HomePage from "./Pages/HomePage";
 
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle/GlobalStyle";
 import React, { Suspense, useEffect, useState } from "react";
 import Loading from "./Components/Loading";
-// import Team from "./Components/Team";
-// import Contact from "./Components/Contact";
-// import Features from "./Components/Features";
+
 import { useSelector } from "react-redux";
 
 import { useDispatch } from "react-redux";
@@ -33,17 +30,12 @@ AOS.init({
   offset: 100,
 });
 
-// const socket = io.connect("http://localhost:4000");
-
 function App() {
   const [loading, setloading] = useState(true);
-  // const [status, setStatus] = useState(false);
   const dispatch = useDispatch();
-  // const navigate = useNavigate();
   const darkThemeEnabled = useSelector(
     (state) => state.themeReducer.darkThemeEnabled
   );
-  // const user = useSelector((globalState) => globalState.user.userDetails);
 
   const ThemeColor = useSelector((state) => state.setColorReducer.themeColor);
   const rgb = ThemeColor.split(")")[0].split("(")[1];
